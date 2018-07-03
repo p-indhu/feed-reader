@@ -83,7 +83,7 @@ $(function() {
               });
          });
          it('is not empty', function(done) {
-              expect($('.entry').length).not.toBe(0);
+              expect($('.feed .entry').length).not.toBe(0);
               done();
          });
     });
@@ -97,10 +97,10 @@ $(function() {
          beforeEach(function(done) {
          //loading allFeeds[1]
               loadFeed(1, function(){
-                   feed1 = $('.entry').text();
+                   feed1 = $('.feed .entry').text();
                    //loading allFeeds[0]
                    loadFeed(0, function(){
-                        feed2 = $('.entry').text();
+                        feed2 = $('.feed .entry').text();
                         done();
                    });
               });
