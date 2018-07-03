@@ -115,8 +115,8 @@ $(function() {
         });
         it('changes', function(done) {
              //expect content to change
-             expect(feed1).not.toBe(feed2);
-             done();
+              expect(feed1).not.toBe(feed2);
+              done();
         });
 
     });
